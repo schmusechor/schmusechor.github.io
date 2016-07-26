@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', "Abel", cursive;
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 1px;
