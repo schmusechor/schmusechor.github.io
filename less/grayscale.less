@@ -15,7 +15,10 @@ html {
 }
 
 h1,
-h2,
+h2{
+    font-size:50px;
+    font-family: 'Amatic SC', cursive;
+}
 h3,
 h4,
 h5,
@@ -293,21 +296,11 @@ a {
     }
 }
 
-ul.banner-social-buttons {
-    margin-top: 0;
-    @media(max-width:1199px) {
-        margin-top: 15px;
-    }
-    @media(max-width:767px) {
-        li {
-            display: block;
-            margin-bottom: 20px;
-            padding: 0;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
+.carousel-control {
+    position: absolute;
+    top: 50%; /* pushes the icon in the middle of the height */
+    z-index: 5;
+    display: inline-block;
 }
 
 footer {
