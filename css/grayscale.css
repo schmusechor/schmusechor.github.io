@@ -126,7 +126,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/intro-bg.jpg) no-repeat center fixed;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -138,7 +138,7 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  font-size: 40px;
+  padding: 10px;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
@@ -146,7 +146,7 @@ a:focus {
 @media (min-width: 768px) {
   .intro {
     height: 100%;
-    padding: 0;
+    padding: 0px;
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
@@ -219,26 +219,38 @@ a:focus {
     transform: scale(1);
   }
 }
-.content-section {
+.info-section {
   padding-top: 100px;
+}
+.concert-section {
+  padding-top: 140px;
+  padding-bottom: 200px;
 }
 .concert-section th {
   text-align: center;
 }
+.video-section {
+  padding-top: 120px;
+  padding-bottom: 400px;
+}
+.pictures-section {
+  padding: 40px;
+}
 @media (min-width: 767px) {
-  .content-section {
+  .info-section {
     padding-top: 200px;
   }
   .concert-section {
-    padding-top: 140px;
+    padding-top: 190px;
     padding-bottom: 200px;
   }
   .video-section {
-    padding-top: 40px;
+    padding-top: 90px;
     padding-bottom: 400px;
   }
   .pictures-section {
-    padding: 40px;
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 }
 .btn {
