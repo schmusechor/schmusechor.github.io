@@ -139,14 +139,15 @@ a:focus {
 }
 .intro .intro-body .brand-heading {
   padding: 10px;
+  padding-top: 100px;
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
 @media (min-width: 768px) {
   .intro {
+    background-attachment: fixed;
     height: 100%;
-    padding: 0px;
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
@@ -220,7 +221,7 @@ a:focus {
   }
 }
 .info-section {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 .concert-section {
   padding-top: 140px;
