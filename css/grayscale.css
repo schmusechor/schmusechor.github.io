@@ -41,7 +41,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: #dd6d21;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -49,7 +49,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #844114;
 }
 .light {
   font-weight: 400;
@@ -264,16 +264,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid #dd6d21;
+  color: #dd6d21;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid #dd6d21;
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: #dd6d21;
 }
 .carousel-control {
   position: absolute;
