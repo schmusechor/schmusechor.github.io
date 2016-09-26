@@ -72,9 +72,15 @@ a:focus {
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
+  padding: 17px 10px;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 17px 40px;
+  }
 }
 .navbar-custom a {
   color: white;
@@ -105,9 +111,8 @@ a:focus {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 20px 0;
     border-bottom: none;
-    letter-spacing: 1px;
+    letter-spacing: 7px;
     background: transparent;
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
