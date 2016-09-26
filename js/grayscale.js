@@ -36,8 +36,8 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(function(){
         $(".typed-tag").typed({
-            strings: ["zum Tanzen",
-                      "zum Träumen",
+            strings: ["zum tanzen",
+                      "zum träumen",
                       "♬ la la la la ♬",
                       "zum Schmusen",
                       "der auch sehr sehr gut ist"],
