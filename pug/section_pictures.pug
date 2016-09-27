@@ -1,0 +1,25 @@
+section#pictures.container.pictures-section.text-center
+  .row
+    .col-lg-8.col-lg-offset-2
+      h2 pictures
+      p
+        #picture-carousel.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#picture-carousel', data-slide-to='0')
+            li(data-target='#picture-carousel', data-slide-to='1')
+            li(data-target='#picture-carousel', data-slide-to='2')
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='https://s3.eu-central-1.amazonaws.com/schmusechor-img/img01.jpg', alt='sing')
+            .item
+              img(src='https://s3.eu-central-1.amazonaws.com/schmusechor-img/img05.jpg', alt='chor')
+            .item
+              img(src='https://s3.eu-central-1.amazonaws.com/schmusechor-img/img07.jpg', alt='dance')
+          a.left.carousel-control(href='#picture-carousel', role='button', data-slide='prev')
+            span.fa.fa-angle-double-left.fa-2x(aria-hidden='true')
+            |  
+            span.sr-only Previous
+          a.right.carousel-control(href='#picture-carousel', role='button', data-slide='next')
+            span.fa.fa-angle-double-right.fa-2x(aria-hidden='true')
+            |  
+            span.sr-only Next

@@ -1,0 +1,54 @@
+doctype html
+html(lang='de')
+  include head.pug
+  body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+            | Menu
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll
+            a.navbar-brand.page-scroll(href='https://www.facebook.com/schmusechor', ,='', target='_blank')
+              i.fa.fa-facebook-f
+            a.navbar-brand.page-scroll(href='mailto:schmusechor@gmail.com', target='_top')
+              i.fa.fa-envelope-o
+            a.navbar-brand.page-scroll(href='https://www.youtube.com/channel/UCY2p2x5oI3XzMCwZNhcgs1w', target='_blank')
+              i.fa.fa-youtube
+            a.navbar-brand.page-scroll(href='https://www.instagram.com/schmusechor/', target='_blank')
+              i.fa.fa-instagram
+            a.navbar-brand.page-scroll(href='https://soundcloud.com/user-461664643', target='_blank')
+              i.fa.fa-soundcloud
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          ul.nav.navbar-nav
+            li.hidden
+              a(href='#page-top')
+            li
+              a.page-scroll(href='#info') info
+            li
+              a.page-scroll(href='#Concerts') Konzerte
+            li
+              a.page-scroll(href='#video') video
+            li
+              a.page-scroll(href='#pictures') pictures
+    header.intro
+      .intro-body
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              h1.brand-heading Schmusechor
+              p.intro-text
+                | der chor
+                span.typed-tag
+              a.btn.btn-circle.page-scroll(href='#info')
+                i.fa.fa-angle-double-down.animated
+    include section_info.pug
+    include section_concerts.pug
+    include section_video.pug
+    include section_pictures.pug
+    footer
+      .container.text-center
+        p Impressum:
+        p Schmusechor e.V
+        p 1020 Wien
+    include scripts.pug

@@ -20,6 +20,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3",
+    "jstransformer-markdown-it": "^1.0.0",
     "pug": "^2.0.0-beta6"
   },
   "repository": {
