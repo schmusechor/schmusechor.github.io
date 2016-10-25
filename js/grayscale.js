@@ -39,7 +39,7 @@ $(function(){
           strings: ["zum tanzen",
                     "zum träumen",
                     "♬ la la la la ♬",
-                    "zum Schmusen",
+                    "zum schmusen",
                     "der auch sehr sehr gut ist"],
           backDelay: 750,
           typeSpeed: 80,
