@@ -36,11 +36,10 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(function(){
       $(".typed-tag").typed({
-          strings: ["zum tanzen",
-                    "zum träumen",
+          strings: ["zum Tanzen",
+                    "zum Träumen",
                     "♬ la la la la ♬",
-                    "zum schmusen",
-                    "der auch sehr sehr gut ist"],
+                    "zum Schmusen"],
           backDelay: 750,
           typeSpeed: 80,
           loop: true,
