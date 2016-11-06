@@ -352,30 +352,30 @@ body {
     webkit-tap-highlight-color: fade(white, 20%);
 }
 
-// Portfolio Section
+// news Section
 
-#portfolio {
-    .portfolio-item {
-        margin: 0 0 15px;
+#news {
+    .news-item {
+        margin: 20px 0 15px;
         right: 0;
-        .portfolio-link {
+        .news-link {
             display: block;
             position: relative;
             max-width: 400px;
             margin: 0 auto;
-            .portfolio-hover {
+            .news-hover {
                 background: fade(@primary, 90%);
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                opacity: 0;
+                // opacity: 0;
                 transition: all ease 0.5s;
                 -webkit-transition: all ease 0.5s;
                 -moz-transition: all ease 0.5s;
                 &:hover {
                     opacity: 1;
                 }
-                .portfolio-hover-content {
+                .news-hover-content {
                     position: absolute;
                     width: 100%;
                     height: 20px;
@@ -394,7 +394,7 @@ body {
                 }                
             } 
         }
-        .portfolio-caption {
+        .news-caption {
             max-width: 400px;
             margin: 0 auto;
             background-color: white;
@@ -418,14 +418,14 @@ body {
 }
 
 @media(min-width:767px) {
-    #portfolio {
-        .portfolio-item {
+    #news {
+        .news-item {
             margin: 0 0 30px;
         }
     }
 }
 
-.portfolio-modal {
+.news-modal {
     .modal-dialog{
         margin: 0;
         height: 100%;
