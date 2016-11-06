@@ -205,6 +205,12 @@ a {
     }
 }
 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
 @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
@@ -213,7 +219,7 @@ a {
 
     50% {
         -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        transform: scale(9);
     }
 
     100% {
@@ -223,7 +229,7 @@ a {
 }
 
 @-moz-keyframes pulse {
-    0 {
+    0% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
@@ -346,6 +352,7 @@ body {
     webkit-tap-highlight-color: fade(white, 20%);
 }
 
+// Portfolio Section
 
 #portfolio {
     .portfolio-item {
@@ -356,8 +363,8 @@ body {
             position: relative;
             max-width: 400px;
             margin: 0 auto;
-            .caption {
-                background: fade(@theme-success, 90%);
+            .portfolio-hover {
+                background: fade(@primary, 90%);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -368,7 +375,7 @@ body {
                 &:hover {
                     opacity: 1;
                 }
-                .caption-content {
+                .portfolio-hover-content {
                     position: absolute;
                     width: 100%;
                     height: 20px;
@@ -384,7 +391,24 @@ body {
                     h4 {
                         margin: 0;
                     }
-                }
+                }                
+            }            
+        }
+        .portfolio-caption {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+            padding: 25px;
+            h4 {
+                text-transform: none;
+                margin: 0;
+            }
+            p {
+                // .serif-font;
+                font-style: italic;
+                font-size: 16px;
+                margin: 0;
             }
         }
     }
@@ -402,26 +426,41 @@ body {
 }
 
 .portfolio-modal {
-	.modal-content {
-	    border-radius: 0;
-	    background-clip: border-box;
-	    -webkit-box-shadow: none;
-	    box-shadow: none;
-	    border: none;
-	    min-height: 100%;
-	    padding: 100px 0;
-	    text-align: center;
-		h2 {
-	    	margin: 0;
-	    	font-size: 3em;
-		}
-		img {
-			margin-bottom: 30px;
-		}
-		.item-details {
-			margin: 30px 0;
-		}
-	}
+    .modal-dialog{
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+    .modal-content {
+        border-radius: 0;
+        background-clip: border-box;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        min-height: 100%;
+        padding: 100px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 15px;
+            font-size: 3em;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        p.item-intro {
+            margin: 20px 0 30px;
+            // .serif-font;
+            font-style: italic;
+            font-size: 16px;
+        }
+        ul.list-inline {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+    }
     .close-modal {
         position: absolute;
         width:75px;
@@ -437,7 +476,7 @@ body {
             height:75px;
             width:1px;
             margin-left:35px;
-            background-color:@theme-primary;
+            // background-color:@gray-darker;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
@@ -447,18 +486,18 @@ body {
             .rl {
                 height:75px;
                 width:1px;
-                background-color:@theme-primary;
+                // background-color:@gray-darker;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }
-        }
+            }            
+        }        
     }
     .modal-backdrop {
-    	opacity: 0;
-    	display: none;
+        opacity: 0;
+        display: none;
     }
 }
