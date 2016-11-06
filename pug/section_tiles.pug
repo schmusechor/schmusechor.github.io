@@ -1,0 +1,32 @@
+// Portfolio Grid Section
+section#portfolio
+  .container
+    .row
+      .col-lg-12.text-center
+        h2 Portfolio
+        hr.star-primary
+    .row
+      .col-sm-4.portfolio-item
+        a.portfolio-link(href='#portfolioModal1', data-toggle='modal')
+          .caption
+            .caption-content
+              i.fa.fa-search-plus.fa-3x
+          img.img-responsive(src='https://s3.eu-central-1.amazonaws.com/schmusechor-img/img01.jpg', alt='')
+
+// Portfolio Modals
+#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-content
+    .close-modal(data-dismiss='modal')
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 Project Title
+            hr.star-primary
+            img.img-responsive.img-centered(src='https://s3.eu-central-1.amazonaws.com/schmusechor-img/img01.jpg', alt='')
+            button.btn.btn-default(type='button', data-dismiss='modal')
+              i.fa.fa-times
+              |  Close
+          
