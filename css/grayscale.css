@@ -372,7 +372,7 @@ body {
 .news-modal .modal-dialog {
   margin: 0;
   height: 100%;
-  width: auto;
+  width: 102%;
 }
 .news-modal .modal-content {
   border-radius: 0;
