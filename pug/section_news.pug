@@ -1,3 +1,4 @@
+include mixins.pug
 section#news
   .container
     .row
@@ -7,6 +8,9 @@ section#news
   .container-fluid
     .grid
       .grid-sizer.col-md-4
+        +tile('test', 
+              '#sampleNewsModal', 
+              'https://s3.eu-central-1.amazonaws.com/schmusechor-img/img07.jpg')
         include tiles/video_docu.pug
         include tiles/video_faq.pug
         include tiles/sample_tile.pug
