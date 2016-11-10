@@ -1,13 +1,23 @@
+include mixins.pug
 section#news
   .container
     .row
       .col-lg-12.text-center
         h2.section-heading News
         h3.section-subheading.text-muted Neues vom Schmusechor
-     
-    .row
-      include tiles/sample_tile.pug
-      include tiles/video_faq.pug
-      include tiles/sample_tile.pug
-    .row
-      include tiles/sample_tile.pug
+  .container-fluid
+    .grid
+      .grid-sizer.col-md-4
+        +tile('test', 
+              '#sampleNewsModal', 
+              'https://s3.eu-central-1.amazonaws.com/schmusechor-img/img07.jpg')
+        include tiles/video_docu.pug
+        include tiles/video_faq.pug
+        include tiles/sample_tile.pug
+      .grid-sizer.col-md-4
+        include tiles/video_docu.pug
+        include tiles/sample_tile.pug
+      .grid-sizer.col-md-4
+        include tiles/video_faq.pug
+        include tiles/video_docu.pug
+        include tiles/sample_tile.pug

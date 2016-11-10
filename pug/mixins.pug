@@ -1,0 +1,7 @@
+mixin tile(title, href, img)
+  .news-item
+    a.news-link(href= href, data-toggle='modal')
+      .news-hover
+        .news-hover-content
+          h2=title
+      img.img-responsive(src= img, alt='')
