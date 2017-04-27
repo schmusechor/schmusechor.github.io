@@ -52,6 +52,9 @@ a:focus {
   text-decoration: none;
   color: #844114;
 }
+.special {
+  font-size:22.5px;
+}
 .light {
   font-weight: 400;
 }
@@ -236,6 +239,12 @@ a:focus {
   padding-bottom: 200px;
 }
 .concert-section th {
+  text-align: center;
+}
+.concert-section th {
+  text-align: center;
+}
+.concert-section td {
   text-align: center;
 }
 .video-section {
