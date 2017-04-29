@@ -2,7 +2,7 @@ section#Concerts.concert-section.text-center
   .Concerts-section
     .container
       .col-lg-8.col-lg-offset-2
-        h2 Konzerte
+        h2 Aktuelle Konzerte
         table.table
           thead
             tr
@@ -20,74 +20,67 @@ section#Concerts.concert-section.text-center
               td 08.06.2017
               td schmusechor // IG Wien
               td tba
-          tbody.collapse#old_gigs
-            tr 
+      .col-lg-8.col-lg-offset-2
+        h2 Vergangene Konzerte
+        div.show_all(data-toggle="collapse" data-target='.old_gigs') alle anzeigen
+        table.table
+          tbody
+            tr.collapse.old_gigs
               td 13.01.2017
               td SYN13
               td AU, Brunnengasse 76, Wien 
-            tr
+            tr.collapse.old_gigs
               td 15.10.2016
               td 
                 a(target="_blank", href="http://stadtform.at/aktuelles/magazinpraesentation-wien-museum/") stadtform magazin // release
               td Wien Museum
-            tr
+            tr.collapse.old_gigs
               td 10.09.2016
               td 
                 a(target="_blank", href="http://reindorfgassenfest.at/") Reindorfgassen Fest
               td B&uuml;hne Nord
-            tr
-              td 03.09.2016
-              td 
-               a(target="_blank", href="http://www.faq-bregenzerwald.com/") FAQ Festival Bregenzer Wald
-              td Kapelle Alpe Niedere
-            tr
+            tr.collapse.old_gigs
               td 26.08.2016
               td 
                a(target="_blank", href="https://www.leiseart.at/") Leise Art Festival
                <br> with Willi Landl & Mira Lu Kovacs (Schmieds Puls Solo)
               td Gars am Kamp, Niederösterreich
-            tr
+            tr.collapse.old_gigs
               td 15.07.2016
               td 
                a(target="_blank", href="http://homeiswheretheartis.at/") Home is where the art is Festival
               td Strombauamt Greifenstein
-            tr  
+            tr.collapse.old_gigs
               td 28.05.2016
               td 
                a(target="_blank", href="http://cestlamue.at/") C'est la MÜ Festival
               td Cselleymühle, Burgenland
-            tr 
+            tr.collapse.old_gigs
               td 25.05.2016
               td schmusechor // voZo
               td VoZo-Café, Wien
-            tr
+            tr.collapse.old_gigs
               td 03.10.2015
               td SchMOsËchor - Schmusechor unleashed
               td Mo.ë, Wien
-            tr  
+            tr
               td 28.05.2016
               td 
                a(target="_blank", href="http://www.wavesvienna.com/" ) Schmusechor // waves 2015
                <br> Kip. Kunst im Prückl
               td Café Prückl, Wien
-            tr  
+            tr
               td 12.09.2015
               td Festival für Europa @ Arena
               td Arena, Wien
-            tr  
+            tr.collapse.old_gigs  
               td 12.09.2015
               td Reindorfgassenfest 2015
               td Reindorfgasse, Wien
-            tr  
+            tr
               td 25.07.2015
               td 
                a(target="_blank", href="http://perspektiven-attersee.at/" ) Perspektiven Festival Attersee
               td Evangelische Kirche Attersee
-        a.btn.btn-circle(data-toggle="collapse" data-target='#old_gigs', style='font-size:35px;')
-          //- i.fa.fa-angle-double-left.animated
-          i.fa.fa-ellipsis-h.animated
-          //- i.fa.fa-clock-o.page-scroll.animated
         a.btn.btn-circle.page-scroll(href='#video')
-          i.fa.fa-angle-double-down.animated  
-        a.btn.btn-circle(href='https://www.facebook.com/schmusechor/events', target='_blank', style='font-size:35px;')  
-          i.fa.fa-facebook.page-scroll.animated
+          i.fa.fa-angle-double-down.animated

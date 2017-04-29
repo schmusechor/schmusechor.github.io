@@ -235,10 +235,15 @@ a:focus {
   padding-top: 140px;
   padding-bottom: 200px;
 }
+.concert-section .show_all {
+  font-family: 'Amatic SC', "Helvetica Neue", Arial;
+  font-size: 22.5px;
+  color: #dd6d21;
+}
 .concert-section .special {
   font-size: 22.5px;
   text-align: center;
-  color: peru;
+  color: #dd6d21;
 }
 .concert-section th {
   text-align: center;
