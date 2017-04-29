@@ -52,9 +52,6 @@ a:focus {
   text-decoration: none;
   color: #844114;
 }
-.special {
-  font-size:22.5px;
-}
 .light {
   font-weight: 400;
 }
@@ -238,14 +235,16 @@ a:focus {
   padding-top: 140px;
   padding-bottom: 200px;
 }
-.concert-section th {
+.concert-section .special {
+  font-size: 22.5px;
   text-align: center;
+  color: peru;
 }
 .concert-section th {
   text-align: center;
 }
 .concert-section td {
-  text-align: center;
+  text-align: left;
 }
 .video-section {
   padding-top: 120px;
