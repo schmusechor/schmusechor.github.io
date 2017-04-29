@@ -1,7 +1,9 @@
-mixin tile(title, href, img)
+
+mixin link_tile(title, info, link, img)
   .news-item
-    a.news-link(href= href, data-toggle='modal')
+    a.news-link(href=link, target='_blank')
       .news-hover
         .news-hover-content
           h2=title
-      img.img-responsive(src= img, alt='')
+          h3=info
+      img.img-responsive(src=img, alt=title)

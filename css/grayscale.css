@@ -249,12 +249,12 @@ a:focus {
 .concert-section .show_all {
   font-family: 'Amatic SC', "Helvetica Neue", Arial;
   font-size: 22.5px;
-  color: #dd6d21;
+  color: #777;
 }
 .concert-section .special {
   font-size: 22.5px;
   text-align: center;
-  color: #dd6d21;
+  color: #777;
 }
 .concert-section th {
   text-align: center;
@@ -368,13 +368,12 @@ body {
   height: 20%;
   font-size: 20px;
   text-align: center;
-  margin-top: -10px;
   color: white;
 }
 #news .news-item .news-link .news-hover .news-hover-content h2,
 #news .news-item .news-link .news-hover .news-hover-content h3,
 #news .news-item .news-link .news-hover .news-hover-content h4 {
-  margin-top: 50px;
+  margin-top: 10%;
 }
 #news * {
   z-index: 2;
