@@ -1,7 +1,7 @@
 /*!
  * Schmusechor v1.1.0 (schmusechor.at)
  * Based on Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Copyright 2013-2016 Schmusechor
+ * Copyright 2013-2017 Schmusechor
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -127,6 +127,7 @@ a:focus {
 }
 .intro {
   display: table;
+  background-attachment: fixed;
   width: 100%;
   height: auto;
   padding: 100px 0;
@@ -152,7 +153,7 @@ a:focus {
 }
 @media (min-width: 768px) {
   .intro {
-    background-attachment: fixed;
+    background-attachment: none;
     height: 100%;
   }
   .intro .intro-body .brand-heading {
@@ -166,6 +167,7 @@ a:focus {
   width: 70px;
   height: 70px;
   margin-top: 15px;
+  margin-right: 10px;
   padding: 7px 16px;
   border: 2px solid white;
   border-radius: 100% !important;
@@ -244,8 +246,21 @@ a:focus {
   padding-top: 140px;
   padding-bottom: 200px;
 }
+.concert-section .show_all {
+  font-family: 'Amatic SC', "Helvetica Neue", Arial;
+  font-size: 22.5px;
+  color: #dd6d21;
+}
+.concert-section .special {
+  font-size: 22.5px;
+  text-align: center;
+  color: #dd6d21;
+}
 .concert-section th {
   text-align: center;
+}
+.concert-section td {
+  text-align: left;
 }
 .video-section {
   padding-top: 120px;

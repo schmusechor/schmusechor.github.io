@@ -130,6 +130,7 @@ a {
 
 .intro {
     display: table;
+    background-attachment: fixed;
     width: 100%;
     height: auto;
     padding: 100px 0;
@@ -153,7 +154,7 @@ a {
         }
     }
     @media(min-width:768px) {
-        background-attachment: fixed;
+        background-attachment: none;
         height: 100%;
         .intro-body {
             .brand-heading {
@@ -170,6 +171,7 @@ a {
     width: 70px;
     height: 70px;
     margin-top: 15px;
+    margin-right: 10px;
     padding: 7px 16px;
     border: 2px solid white;
     border-radius: 100% !important;
@@ -253,9 +255,22 @@ a {
 .concert-section {
     padding-top: 140px;
     padding-bottom: 200px;
+    .show_all{
+        font-family: 'Amatic SC', "Helvetica Neue", Arial;
+        font-size: 22.5px;
+        color: @primary
+    }
+    .special {
+        font-size: 22.5px;
+        text-align: center;
+        color: @primary;
+        }
     th {
         text-align: center;
-        }      
+        }
+        td {
+           text-align: left;
+            }
 }
 
 .video-section {
