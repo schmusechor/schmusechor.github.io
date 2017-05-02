@@ -398,10 +398,14 @@ body {
   padding: 100px 0;
   text-align: center;
 }
-.news-modal .modal-content h2 {
+.news-modal .modal-content h1,
+.news-modal .modal-content h2,
+.news-modal .modal-content h3 {
   color: black;
-  margin-bottom: 15px;
-  font-size: 3em;
+  margin-top: 9px;
+}
+.news-modal .modal-content h1 {
+  font-size: 8em;
 }
 .news-modal .modal-content p {
   margin-bottom: 30px;
