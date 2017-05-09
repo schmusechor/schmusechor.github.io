@@ -1,0 +1,19 @@
+include mixins.pug
+section#news
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading News
+        h3.section-subheading.text-muted Neues vom Schmusechor
+  .container-fluid
+    .grid
+      .grid-sizer.col-md-4
+        include tiles/video_they_shoot_behind_the_scenes.pug
+        include tiles/reindorfgasse_lukas.pug
+      .grid-sizer.col-md-4
+        include tiles/onetake.pug
+        include tiles/trailer_201703.pug
+        include tiles/video_faq.pug
+      .grid-sizer.col-md-4
+        include tiles/leiseart_lukas.pug
+        include tiles/video_docu.pug
