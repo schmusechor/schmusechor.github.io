@@ -14,7 +14,8 @@ section#Concerts.concert-section.text-center
               td 23.06.2017
               td  one night in the name of love:
                br 
-               div(class='special') the schmusical
+               .special
+                a(target="_blank", href="https://www.youtube.com/watch?v=dQw4w9WgXcQ") the schmusical
               td Ateliertheater, Wien
             tr 
               td 08.06.2017
@@ -22,8 +23,12 @@ section#Concerts.concert-section.text-center
               td tba
       .col-lg-8.col-lg-offset-2
         h2 Vergangene Konzerte
-        href.show_all(data-toggle="collapse" data-target='.old_gigs') alle anzeigen
         table.table
+          thead
+            tr
+              th Termin
+              th Event
+              th Ort
           tbody
             tr.collapse.old_gigs
               td 13.01.2017
@@ -82,5 +87,6 @@ section#Concerts.concert-section.text-center
               td 
                a(target="_blank", href="http://perspektiven-attersee.at/" ) Perspektiven Festival Attersee
               td Evangelische Kirche Attersee
+          href.show_all(data-toggle="collapse" data-target='.old_gigs') alle anzeigen
         a.btn.btn-circle.page-scroll(href='#news')
           i.fa.fa-angle-double-down.animated        
