@@ -29,6 +29,8 @@ html(lang='de')
               a.page-scroll(href='#Concerts') Konzerte
             li
               a.page-scroll(href='#news') News
+            li
+              a.page-scroll(href='./Impressum.html') Impressum
     header.intro
       .intro-body
         .container
@@ -45,8 +47,6 @@ html(lang='de')
     include section_news.pug
     footer
       .container.text-center
-        p Impressum:
-        p Schmusechor e.V
-        p 1020 Wien
-    include section_modals.pug
+        a(href='./Impressum.html')
+          p Impressum
     include scripts.pug

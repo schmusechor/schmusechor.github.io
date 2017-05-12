@@ -64,6 +64,12 @@ gulp.task('pug', function buildHTML() {
   .pipe(gulp.dest('.'))
 
 });
+gulp.task('imp_pug', function buildHTML() {
+  return gulp.src('pug/impressum.pug')
+  .pipe(pug({pretty: true}))
+  .pipe(gulp.dest('.'))
+
+});
 
 // Copy Bootstrap core files from node_modules to vendor directory
 gulp.task('bootstrap', function() {
@@ -103,8 +109,9 @@ gulp.task('browserSync', function() {
 })
 
 // Watch Task that compiles LESS and watches for HTML or JS changes and reloads with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'pug'], function() {
-    gulp.watch('pug/**/*.pug', ['pug']);
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js', 'pug', 'imp_pug'
+], function() {
+    gulp.watch('pug/*.pug', ['pug', 'imp_pug']);
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);

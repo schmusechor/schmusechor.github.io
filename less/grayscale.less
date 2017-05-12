@@ -40,6 +40,12 @@ p {
     }
 }
 
+div.line {
+    // margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 a {
     color: @primary;
     -webkit-transition: all .2s ease-in-out;
@@ -189,7 +195,9 @@ a {
     }
     i.animated {
         -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
         -webkit-transition-duration: 1s;
+        transition-duration: 1s;
         -moz-transition-property: -moz-transform;
         -moz-transition-duration: 1s;
     }
@@ -250,7 +258,10 @@ a {
 
 .info-section {
     padding-top: 90px;
+    .quoted {
+        text-align: right
     }
+}
 
 .concert-section {
     padding-top: 140px;
@@ -264,24 +275,15 @@ a {
     }
     .special {
         font-size: 22.5px;
-        text-align: center;
+        // text-align: center;
         color: @primary;
         }
     th {
-        text-align: center;
+        text-align: left;
         }
         td {
            text-align: left;
             }
-}
-
-.video-section {
-    padding-top: 120px;
-    padding-bottom: 400px;
-}
-
-.pictures-section {
-    padding: 40px;
 }
 
 
