@@ -1,0 +1,9 @@
+
+mixin link_tile(title, info, link, img)
+  .news-item
+    a.news-link(href=link, target='_blank')
+      .news-hover
+        .news-hover-content
+          h2=title
+          h3=info
+      img.img-responsive(src=img, alt=title)
