@@ -403,7 +403,8 @@ body {
 }
 .news-modal .modal-content h1,
 .news-modal .modal-content h2,
-.news-modal .modal-content h3 {
+.news-modal .modal-content h3,
+.news-modal .modal-content p {
   color: black;
   margin-top: 9px;
 }
