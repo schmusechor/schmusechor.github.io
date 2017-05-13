@@ -53,3 +53,9 @@ $(function(){
           loop: true,
       });
   });
+
+  $('.show_all').click(function(){
+    $(this).text(function(i,old){
+        return old=='alle anzeigen' ?  'highlights anzeigen' : 'alle anzeigen';
+    });
+});
