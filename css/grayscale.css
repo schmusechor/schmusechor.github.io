@@ -46,7 +46,7 @@ div.line {
   line-height: 1.5;
 }
 a {
-  color: #777;
+  color: #FFAD88;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -258,13 +258,12 @@ a:focus {
 .concert-section .show_all {
   font-family: 'Amatic SC', "Helvetica Neue", Arial;
   font-size: 29px;
-  color: #FFAD88;
+  color:  #FFFFFF;
   cursor: pointer;
   cursor: hand;
 }
 .concert-section .special {
   font-size: 22.5px;
-  color: #777;
 }
 .concert-section th {
   text-align: left;
