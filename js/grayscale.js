@@ -36,21 +36,10 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(function(){
       $(".typed-tag").typed({
-          strings: ["zum Tanzen",
-                    "zum Träumen",
-                    "♬ la la la la ♬",
-                    "zum Schmusen",
-                    "zum Lieben",
-                    "♬ come on skinny love ♬",
-                    "zum Küssen",
-                    "zum Mitwippen",
-                    "♬ ich will doch nur schmusen ♬",
-                    "zum Umarmen",
-                    "mit dem Schlafzimmerblick",
-                    "♬ dass du süßer träumen kannst! ♬"],
+          strings: ["summer edition"],
           backDelay: 750,
-          typeSpeed: 80,
-          loop: true,
+          typeSpeed: 60,
+          loop: false,
       });
   });
 
