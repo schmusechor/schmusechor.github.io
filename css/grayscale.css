@@ -137,7 +137,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/schmusechor-bg.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -257,7 +257,7 @@ a:focus {
 }
 .concert-section .show_all {
   font-family: 'Amatic SC', "Helvetica Neue", Arial;
-  font-size: 29px;
+  font-size: 45px;
   color: #FFAD88;
   cursor: pointer;
   cursor: hand;
