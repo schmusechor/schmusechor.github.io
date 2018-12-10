@@ -1,5 +1,5 @@
 #!/bin/sh
-export AWS_DEFAULT_PROFILE=schmusepage
+export AWS_DEFAULT_PROFILE=james-dev
 
 aws s3 sync img/tiles s3://schmusechor.at/img/tiles
 aws s3 cp index.html s3://schmusechor.at

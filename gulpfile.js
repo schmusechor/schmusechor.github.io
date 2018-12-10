@@ -119,4 +119,4 @@ gulp.task('dev', gulp.series(['browserSync', 'less', 'minify-css', 'minify-js', 
     gulp.watch('js/**/*.js', browserSync.reload);
 });
 
-gulp.task('default', gulp.series('less', 'minify-css', 'minify-js', 'copy'));
+gulp.task('default', gulp.series('less', 'minify-css', 'minify-js', 'pug', 'copy'));
